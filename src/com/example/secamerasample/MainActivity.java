@@ -1,5 +1,6 @@
 package com.example.secamerasample;
 
+import com.se.camerasample.PhotoActivity;
 import com.se.camerasample.R;
 import com.se.camerasample.VideoActivity;
 
@@ -40,6 +41,11 @@ public class MainActivity extends Activity {
 	
 	public void recordVideoClick(View view ){
 		Intent intent = new Intent(this,VideoActivity.class);
+	    startActivity(intent);
+	}
+	
+	public void takePhotoClick(View view){
+		Intent intent = new Intent(this, PhotoActivity.class);
 	    startActivity(intent);
 	}
 }
